@@ -17,10 +17,16 @@
   margin: 0px;
   padding: 0px 15px;
   text-decoration: none;
-  transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in
+
 }
 #topNav > ul > li > a:hover {
   color: black;
  
+}
+body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
