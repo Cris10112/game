@@ -36,38 +36,15 @@
     <li><a href="#video">Video Game Exploration</a></li>
 </ul>
 
-<h2 id="board">Board Game Exploration</h2>
+<h1 id="board">Board Game Exploration</h1>
 <p>content about the board game development exercise</p>
 
 <h2 id ="video">Video Game Exploration</h2>
 <p>The game that i made is callled coin collector and the purpose is to have a character collect coins in the time
    frame that is given, while also trying to have the highest score at the end. </p>
   
-   <th> Code for my game </th>
+   <h2> Code for my game </h2>
 <pre>
-           WIDTH=400
-           HEIGHT=400
-
-           score=0
-           game_over=False
-
-           fox=Actor('fox.png')
-           fox.pos= 100,100
-
-           coin=Actor('coin.png')
-           coin.pos= 200,200
-
-
-           def draw():
-               screen.fill("green")
-               fox.draw()
-               coin.draw()
-               screen.draw.text("score:" + str(score), color="black", topleft=(10,10))
-               if game_over:
-                    screen.fill("pink")
-                    screen.draw.text("Final score: " + str(score), topleft=(10,10), fontsize=60)
-
-
            def place_coin():
                 coin.x = randint(20,(WIDTH - 20))
                 coin.y = randint(20,(HEIGHT - 20))
